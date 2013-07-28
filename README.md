@@ -45,7 +45,7 @@ In this example the *animationA* will of run immediately. *animateB* and *animat
 
 The callback passed in as the first argument should return a promise. If it does not, then KillingQueue cannot tell when the function completes, so assumes the function completes immediately. 
  
-The upshot is that any queued callbacks are then also called immediately. Droppeable callbacks are also more likely to be called as there is a smaller window of time during which the queue is active.
+The upshot is that any queued callbacks are then also called immediately. Droppeable callbacks are also more likely to be called as the queue is blocked for a shorter time.
 
 # JQuery
 This plugin relies on jQuery's Deferreds to work. It is however not a true jquery plugin as it does not extend jquery.
