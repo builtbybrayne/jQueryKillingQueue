@@ -53,4 +53,6 @@ This plugin relies on jQuery's Deferreds to work. It is however not a true jquer
 # Development
 This plugin is very simple and only does what I needed it to. There are any number of improvements which it could obviously do with.
 
-I am not actively developing this code. By and large I probably won't implement complicated requests for modifications myself - it's not that complciated a plugin to hack, really! If requests for modifications are simple enough to do I may well just do them. I am also happy to accept pull requests and I encourage forks. 
+I am not actively developing this code. By and large I probably won't implement complicated requests for modifications myself - it's not that complicated a plugin to hack, and if you're nervous about doing so I would encourage you to give it a go even more! Having said that, you can always ask :)
+
+I am happy to accept pull requests and I encourage forks.
