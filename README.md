@@ -39,13 +39,13 @@ e.g. You have a UI animation which you want to run and it takes a second or two 
         $("#animateC").animate({...})
     });
 
-In this example the animation for A will of run immediately. animateB and animateC are obviously called well before animateA is finished, and do not use any promises/deferreds or callbacks. animateB waits until animateA is complete and then also runs. animateC is dropped and never runs.
+In this example the *animationA* will of run immediately. *animateB* and *animateC* are obviously called well before *animateA* is finished. *animateB* waits until *animateA* is complete and then also runs. *animateC* is dropped and never runs.
 
 # Callbacks 
 
 The callback passed in as the first argument should return a promise. If it does not, then KillingQueue cannot tell when the function completes, so assumes the function completes immediately. 
  
-The upshot is that any queued callbacks are then also called immediately. Droppeable callbacks are also more likely to be called as there is a smaller window of time the queue during which the queue is active.
+The upshot is that any queued callbacks are then also called immediately. Droppeable callbacks are also more likely to be called as there is a smaller window of time during which the queue is active.
 
 # JQuery
 This plugin relies on jQuery's Deferreds to work. It is however not a true jquery plugin as it does not extend jquery.
