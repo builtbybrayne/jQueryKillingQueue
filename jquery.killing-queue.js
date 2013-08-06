@@ -5,7 +5,7 @@
 
     KillingQueue = function(){
 
-        this.debug = true;
+        this.debug = false;
 
         this._active = false;
         this._deferred = false;
